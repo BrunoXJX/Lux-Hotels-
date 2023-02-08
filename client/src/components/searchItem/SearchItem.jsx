@@ -7,7 +7,7 @@ const SearchItem = ({ item }) => {
       <img src={item.photos[0]} alt="" className="siImg" />
       <div className="siDesc">
         <h1 className="siTitle">{item.name}</h1>
-        <span className="siDistance">{item.distance}m from center</span>
+        <span className="siDistance">{item.distance}m do centro </span>
         <span className="siTaxiOp">Taxi de graça desde o aeroporto</span>
         <span className="siSubtitle">
          Hotel com ar condicionado e serviço de quartos
@@ -24,7 +24,7 @@ const SearchItem = ({ item }) => {
           <button>{item.rating}</button>
         </div>}
         <div className="siDetailTexts">
-          <span className="siPrice">${item.cheapestPrice}</span>
+          <span className="siPrice">€{item.cheapestPrice}</span>
           <span className="siTaxOp">Inclui todo o tipo de taxas</span>
           <Link to={`/hotels/${item._id}`}>
           <button className="siCheckButton">Aproveite Hoje!!</button>

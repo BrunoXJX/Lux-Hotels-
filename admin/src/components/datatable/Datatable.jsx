@@ -41,7 +41,7 @@ const Datatable = ({columns}) => {
               className="deleteButton"
               onClick={() => handleDelete(params.row._id)}
             >
-              Eliminar
+              Delete
             </div>
           </div>
         );
@@ -53,7 +53,7 @@ const Datatable = ({columns}) => {
       <div className="datatableTitle">
          {path.toUpperCase()}
         <Link to={`/${path}/new`} className="link">
-          Adicionar
+          Add New
         </Link>
        
       </div>

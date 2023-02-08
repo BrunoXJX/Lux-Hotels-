@@ -13,7 +13,7 @@ const SearchItemcity = ({ item }) => {
         
         <span className="siFeatures">{item.desc}</span>
         <span className="siFeatures"><h5>Tipo:</h5>{item.type}</span>
-                <span className="siCancelOp">Grátis de cancelar</span>
+                <span className="siCancelOp">Cancelamento gratuido nas primeiras 72 horas</span>
                 <span className="siCancelOpSubtitle">Podes cancelar mais tarde, então garante este ótimo preço hoje!</span>
       </div>
       <div className="siDetails">

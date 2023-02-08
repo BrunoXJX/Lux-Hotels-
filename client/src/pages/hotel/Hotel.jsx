@@ -106,10 +106,10 @@ const Hotel = () => {
             <span>{data.address}</span>
           </div>
           <span className="hotelDistance">
-            Excelente localização – {data.distance}m do centro
+            Localizado a – {data.distance}m  do centro
           </span>
           <span className="hotelPriceHighlight">
-            Alugue já o seu quarto por {data.cheapestPrice}€ e com táxi gratuito vindo do aeroporto
+            Com um custo de €{data.cheapestPrice} e com taxi gratis vindo do aeroporto
           </span>
           <div className="hotelImages">
             {data.photos?.map((photo, i) => (
@@ -133,12 +133,12 @@ const Hotel = () => {
             <div className="hotelDetailsPrice">
               <h1>Perfeito para uma estadia de {days}-noites!</h1>
               <span>
-              Hotel de 5 estrelas com uma taxa de aprovação de 9.8 e com vista para o mar.
+                Aproveite já os melhores hóteis disponiveis 
               </span>
               <h2>
                 <b>€{days * data.cheapestPrice * options.room}</b> ({days} noites)
               </h2>
-              <button onClick={handleClick}>Não perca mais tempo! Reserve já!! </button>
+              <button onClick={handleClick}>Reserve já!</button>
             </div>
           </div>
         </div>

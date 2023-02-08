@@ -31,7 +31,7 @@ export const login = async (req, res, next) => {
     if (!isPasswordCorrect)
       return next(createError(400, "Wrong password or username!"));
 
-    const token = jwt.sign( 
+    const token = jwt.sign( //its gonna verify our token then verify after verifying its gonna check our user info if its admin we are gonna be allowed to delete hotel
       { id: user._id, isAdmin: user.isAdmin },
       process.env.JWT
     );
@@ -39,7 +39,7 @@ export const login = async (req, res, next) => {
     const { password, isAdmin, ...otherDetails } = user._doc;
     res
       .cookie("access_token", token, {
-        httpOnly: true, 
+        httpOnly: true, //it doesnt allow any client secret to reach this cookie its much more secure
       })
       .status(200)
       .json({ details: { ...otherDetails }, isAdmin });
