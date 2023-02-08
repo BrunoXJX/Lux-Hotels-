@@ -1,0 +1,116 @@
+.sidebar {
+  background-color: #333;
+  border-right: 1px solid #192433;
+  min-height: 100vh;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .top {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #192433;
+}
+
+.sidebar .top .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+}
+
+.sidebar .top .logo:hover {
+  transform: scale(1.04);
+}
+
+.sidebar .center {
+  padding: 20px;
+}
+
+.sidebar .center ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar .center ul .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.sidebar .center ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar .center ul li:hover {
+  background-color: #192433;
+}
+
+.sidebar .center ul li .icon {
+  font-size: 18px;
+  color: white;
+  margin-right: 10px;
+}
+
+.sidebar .center ul li span {
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.sidebar .bottom {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.sidebar .bottom .colorOption {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar .bottom .colorOption:hover {
+  background-color: white;
+}
+
+.sidebar .bottom .navButton {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #192433;
+  border-radius: 10px;
+  background-color: white;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.sidebar .bottom .navButton:hover {
+  background-color: #192433;
+  color: white;
+}
+
+
+.logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+.logo:hover {
+  transform: scale(1.04);
+
+}
